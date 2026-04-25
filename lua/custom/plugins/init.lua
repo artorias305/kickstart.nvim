@@ -7,4 +7,5 @@
 ---@type LazySpec
 return {
   { 'stevearc/oil.nvim', opts = {} },
+  { 'chomosuke/typst-preview.nvim', opts = {} },
 }

@@ -606,6 +606,7 @@ require('lazy').setup({
         rust_analyzer = {},
         ols = {},
         zls = {},
+        tinymist = {},
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
@@ -992,3 +993,5 @@ require('lazy').setup({
 -- vim: ts=2 sts=2 sw=2 et
 
 vim.keymap.set("n", "<leader>e", ":Oil<CR>")
+vim.keymap.set("n", "<leader>tp", ":TypstPreview")
+vim.keymap.set("n", "<leader>v", ":e $MYVIMRC<CR>")
