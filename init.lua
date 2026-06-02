@@ -1002,3 +1002,5 @@ require('lazy').setup({
 vim.keymap.set("n", "<leader>e", ":Oil<CR>")
 vim.keymap.set("n", "<leader>tp", ":TypstPreview")
 vim.keymap.set("n", "<leader>v", ":e $MYVIMRC<CR>")
+
+vim.cmd.colorscheme 'pewd'
