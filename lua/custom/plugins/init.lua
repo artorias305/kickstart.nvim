@@ -6,6 +6,10 @@
 ---@module 'lazy'
 ---@type LazySpec
 return {
-  { 'stevearc/oil.nvim', opts = {} },
+  { 'stevearc/oil.nvim', opts = {
+    columns = { 'permissions', 'size', 'mtime' },
+    view_opts = { show_hidden = true },
+  } },
   { 'chomosuke/typst-preview.nvim', opts = {} },
+  { 'alexghergh/nvim-tmux-navigation', opts = {} },
 }

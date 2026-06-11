@@ -613,7 +613,6 @@ require('lazy').setup({
         ols = {},
         zls = {},
         tinymist = {},
-        ols = {},
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
@@ -961,7 +960,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
-  require 'kickstart.plugins.neo-tree',
+  -- require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommended keymaps
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
@@ -1002,3 +1001,4 @@ require('lazy').setup({
 vim.keymap.set("n", "<leader>e", ":Oil<CR>")
 vim.keymap.set("n", "<leader>tp", ":TypstPreview")
 vim.keymap.set("n", "<leader>v", ":e $MYVIMRC<CR>")
+vim.keymap.set("n", "<leader>sv", ":vsp<CR>")
