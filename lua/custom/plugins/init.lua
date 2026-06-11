@@ -11,7 +11,6 @@ return {
     view_opts = { show_hidden = true },
   } },
   { 'chomosuke/typst-preview.nvim', opts = {} },
-  { 'alexghergh/nvim-tmux-navigation', opts = {} },
   {
     'dmtrKovalenko/fff.nvim',
     build = function() require('fff.download').download_or_build_binary() end,
