@@ -612,6 +612,7 @@ require('lazy').setup({
         ols = {},
         zls = {},
         tinymist = {},
+        jdtls = {},
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
@@ -728,6 +729,7 @@ require('lazy').setup({
       -- Snippet Engine
       {
         'L3MON4D3/LuaSnip',
+        enabled = false,
         version = '2.*',
         build = (function()
           -- Build Step is needed for regex support in snippets.
@@ -797,7 +799,7 @@ require('lazy').setup({
         default = { 'lsp', 'path', 'snippets' },
       },
 
-      snippets = { preset = 'luasnip' },
+      -- snippets = { preset = 'luasnip' },
 
       -- Blink.cmp includes an optional, recommended rust fuzzy matcher,
       -- which automatically downloads a prebuilt binary when enabled.
