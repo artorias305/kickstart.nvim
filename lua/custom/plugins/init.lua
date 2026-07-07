@@ -33,5 +33,13 @@ return {
         }
       })
     end
+  },
+  {
+    'dgox16/oldworld.nvim'
+  },
+  {
+    'mcauley-penney/visual-whitespace.nvim',
+    opts = {
+    }
   }
 }
