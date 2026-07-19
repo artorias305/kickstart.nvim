@@ -147,8 +147,8 @@ vim.o.splitbelow = true
 --  It is very similar to `vim.o` but offers an interface for conveniently interacting with tables.
 --   See `:help lua-options`
 --   and `:help lua-guide-options`
--- vim.o.list = true
--- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.o.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
@@ -1003,5 +1003,3 @@ vim.keymap.set("n", "<leader>e", ":Oil<CR>")
 vim.keymap.set("n", "<leader>tp", ":TypstPreview")
 vim.keymap.set("n", "<leader>v", ":e $MYVIMRC<CR>")
 vim.keymap.set("n", "<leader>sv", ":vsp<CR>")
-vim.cmd.colorscheme 'oldworld'
-vim.opt.guicursor = ""
