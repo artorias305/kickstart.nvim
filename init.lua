@@ -283,7 +283,7 @@ require('lazy').setup({
       current_line_blame_opts = {
         virt_text = true,
         virt_text_pos = 'eol',
-        delay = 1000
+        delay = 1000,
       },
       signs = {
         add = { text = '+' }, ---@diagnostic disable-line: missing-fields
@@ -999,7 +999,16 @@ require('lazy').setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
-vim.keymap.set("n", "<leader>e", ":Oil<CR>")
-vim.keymap.set("n", "<leader>tp", ":TypstPreview")
-vim.keymap.set("n", "<leader>v", ":e $MYVIMRC<CR>")
-vim.keymap.set("n", "<leader>sv", ":vsp<CR>")
+vim.keymap.set('n', '<leader>e', ':Oil<CR>')
+vim.keymap.set('n', '<leader>tp', ':TypstPreview')
+vim.keymap.set('n', '<leader>v', ':e $MYVIMRC<CR>')
+vim.keymap.set('n', '<leader>sv', ':vsp<CR>')
+
+vim.cmd.colorscheme 'default'
+
+vim.api.nvim_set_hl(0, '@function', { fg = '#dcdcaa' })
+vim.api.nvim_set_hl(0, '@string', { fg = '#cd9178' })
+vim.api.nvim_set_hl(0, '@keyword', { fg = '#569bd5' })
+vim.api.nvim_set_hl(0, '@number', { fg = '#b4cea8' })
+vim.api.nvim_set_hl(0, '@lsp.type.class', { fg = '#4ec9b0' })
+vim.api.nvim_set_hl(0, 'WhichKeyNormal', { bg = 'none' })
