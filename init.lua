@@ -1003,6 +1003,9 @@ vim.keymap.set('n', '<leader>e', ':Oil<CR>')
 vim.keymap.set('n', '<leader>tp', ':TypstPreview')
 vim.keymap.set('n', '<leader>v', ':e $MYVIMRC<CR>')
 vim.keymap.set('n', '<leader>sv', ':vsp<CR>')
+vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope<CR>', {
+  desc = '[S]earch [T]odos',
+})
 
 vim.cmd.colorscheme 'default'
 
