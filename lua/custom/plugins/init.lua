@@ -34,4 +34,7 @@ return {
       }
     end,
   },
+  {
+    'navarasu/onedark.nvim'
+  }
 }

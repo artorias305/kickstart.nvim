@@ -154,7 +154,7 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.o.inccommand = 'split'
 
 -- Show which line your cursor is on
-vim.o.cursorline = true
+-- vim.o.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.o.scrolloff = 10
@@ -613,6 +613,7 @@ require('lazy').setup({
         zls = {},
         tinymist = {},
         jdtls = {},
+        ocamllsp = {},
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
@@ -878,7 +879,7 @@ require('lazy').setup({
       --  and try some other statusline plugin
       local statusline = require 'mini.statusline'
       -- set use_icons to true if you have a Nerd Font
-      statusline.setup { use_icons = vim.g.have_nerd_font }
+      -- statusline.setup { use_icons = vim.g.have_nerd_font }
 
       -- You can configure sections in the statusline by overriding their
       -- default behavior. For example, here we set the section for
@@ -1007,11 +1008,4 @@ vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope<CR>', {
   desc = '[S]earch [T]odos',
 })
 
-vim.cmd.colorscheme 'default'
-
-vim.api.nvim_set_hl(0, '@function', { fg = '#dcdcaa' })
-vim.api.nvim_set_hl(0, '@string', { fg = '#cd9178' })
-vim.api.nvim_set_hl(0, '@keyword', { fg = '#569bd5' })
-vim.api.nvim_set_hl(0, '@number', { fg = '#b4cea8' })
-vim.api.nvim_set_hl(0, '@lsp.type.class', { fg = '#4ec9b0' })
-vim.api.nvim_set_hl(0, 'WhichKeyNormal', { bg = 'none' })
+vim.cmd.colorscheme 'onedark'
